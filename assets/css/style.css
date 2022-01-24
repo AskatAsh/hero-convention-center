@@ -20,9 +20,11 @@
 .carousel-item {
 	height: 100vh;
 	min-height: 300px;
+  
 }
 .carousel-caption {
 	bottom: 220px;
+  background: rgba(0, 0, 0, 0.25);
 }
 .carousel-caption h5 {
 	font-size: 45px;
