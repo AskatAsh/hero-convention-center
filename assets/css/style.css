@@ -1,0 +1,364 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+/* font awesome icons link */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+.spacer{
+  height: 120px;
+}
+/* Navbar and Carousel section starts here*/
+
+/* .bg-light {
+	background-color: transparent !important;
+  background-color: #fffdfd !important;
+} */
+
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+
+.carousel-caption a {
+  font-weight: 700;
+  text-decoration: none;
+	background: azure;
+  opacity: 0.9;
+  border-radius: 7px;
+	padding: 1rem 2.5rem;
+	display: inline-block;
+	color: darkblue;
+	margin-top: 1.5rem;
+}
+.carousel-caption a:hover{
+  opacity: 1;
+}
+
+.navbar-nav a {
+	font-size: 18px;
+	/* text-transform: uppercase; */
+	font-weight: bold;
+}
+.navbar-light .navbar-brand {
+	color: #333333;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+
+  color: darkblue;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #878787;
+  padding-right: 20px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: darkblue;
+  border-bottom: 3px solid darkblue;
+}
+.w-100 {
+	height: 100vh;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	/* background: #fff; */
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.carousel-caption {
+		bottom: 165px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+}
+/* Navbar and Carousel section ends here*/
+
+
+
+
+/* Our packages section starts here */
+.price-card {
+  font-family: "Barlow", sans-serif;
+  padding: 60px 0;
+}
+.price-card .item {
+  border-radius: 30px;
+  margin-bottom: 45px;
+  background-color: #ffffff;
+  border: 2px solid #0575e6;
+  position: relative;
+  padding: 30px;
+}
+.price-card .item .btn.btn-outline-primary {
+  color: #0575e6;
+  border-color: #0575e6;
+  height: 44px;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  position: relative;
+  margin-bottom: 10px;
+}
+.price-card .item .btn.btn-outline-primary:hover {
+  color: #ffffff;
+  background-color: #0575e6;
+  border-color: #0575e6;
+}
+.price-card .item--popular {
+  background-color: #0575e6;
+  color: #ffffff;
+}
+.price-card .item--popular .item__heading h3 span {
+  color: #0575e6;
+  background-color: #ffffff;
+}
+.price-card .item--popular .item__content ul li {
+  color: #ffffff;
+}
+.item__content ul li::before {
+  font-family: FontAwesome;
+  color: #0575e6;
+    content: "\f058";
+    font-size: 1.2em;
+    padding: 10px;
+}
+.price-card .item--popular .item__content .popular li::before {
+  font-family: FontAwesome;
+    content: "\f058";
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+}
+.price-card .item--popular .btn.btn-outline-primary {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.price-card .item--popular .btn.btn-outline-primary:hover {
+  color: #0575e6;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.trending{
+  position: absolute;
+  background-color: rgb(245, 37, 37);
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 15px;
+  top: -10px;
+  /* left: 35%; */
+}
+
+@media screen and (min-width: 992px) {
+  .price-card .item {
+    margin-bottom: 0;
+  }
+}
+.price-card .item__heading h3 {
+  font-size: 0.8752rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.price-card .item__heading h3 > span {
+  background-color: #0575e6;
+  color: #ffffff;
+  padding: 5px 30px;
+  border-radius: 15px;
+}
+.price-card .item__content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.price-card .item__content ul li {
+  line-height: 28px;
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #8898a7;
+}
+.price-card .item__pricing p {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.price-card .item__pricing p small {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  margin: 0;
+}
+/* Our packages section ends here */
+
+/* =================================== */
+
+/* Our Clients section starts here */
+
+body{
+  margin-top:20px;
+}
+h1,h5,p,small{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.align-center {
+    text-align: center;
+}
+.hash-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* display: block; */
+    padding: 0;
+    /* margin: 0 auto; */
+}
+
+@media (min-width: 768px){
+    .hash-list.cols-3 > li {
+        width: 30%;
+    }
+}
+.hash-list > li {
+    display: block;
+    float: left;
+    border: 2px solid darkblue;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 4px 5px 1px 2px rgba(0, 0, 139, 0.3);
+}
+.hash-list > li>p{
+  font-weight: 500;
+}
+.pad-30, .pad-30-all > * {
+    padding: 30px;
+}
+img {
+    border: 0;
+}
+.mgb-20, .mgb-20-all > * {
+    margin-bottom: 15px;
+}
+.wpx-100, .wpx-100-after:after {
+    width: 125px;
+}
+.img-round, .img-rel-round {
+    border-radius: 50%;
+}
+.padb-30, .padb-30-all > * {
+    padding-bottom: 30px;
+}
+
+.mgb-40, .mgb-40-all > * {
+    margin-bottom: 40px;
+}
+.align-center {
+    text-align: center;
+}
+
+.fg-text-d, .fg-hov-text-d:hover, .fg-active-text-d.active {
+    font-weight: 600;
+    color: #222;
+}
+.font-cond-b {
+    font-size: 2em;
+    font-weight: 700;
+}
+/* Our Clients section ends here */
+
+/* ============================= */
+
+/* FAQ section starts here */
+.img-flex{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faq-image{
+    border-radius: 15px;
+    /* background-size: cover; */
+    
+}
+.container h2 {
+    font-weight: 700;
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.panel{
+  border: 3px solid darkblue;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 15px 0px;
+}
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #ffffff;
+    padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #222;
+    text-decoration: none;
+}
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 2.5rem;
+    content: "\f106";
+    color: darkblue;
+    float: right;
+    margin-top: -10px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+}
+/* FAQ section ends here */
+
+/* Footer section starts here */
+.page-footer{
+  background-color: rgb(8, 8, 31);
+  color: #d8d8d8;
+}
